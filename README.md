@@ -127,7 +127,7 @@ root
 
 ## Contribution Guidelines
 
-Contribution Guidelines is [here](https://github.com/sobhanbera/collection/CONTRIBUTING.md) and will be added soon
+Contribution Guidelines is [here](https://github.com/sobhanbera/collection/blob/main/CONTRIBUTING.md) and will be added soon
 
 ## Contributors
 
