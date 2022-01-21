@@ -66,7 +66,7 @@ OR
 ## File Structure
 
 ```
-root
+.
 ├── pages                               - all pages in seperate files
     ├── api                             - backend
         └── anything.js                 - backend route same as filename
@@ -124,6 +124,8 @@ root
 ├── README.md                           - the main project details
 └── struct.md                           - get to know where is which file
 ```
+
+More info about file structure is [here](https://github.com/sobhanbera/collection/blob/main/struct.md).
 
 ## Contribution Guidelines
 
