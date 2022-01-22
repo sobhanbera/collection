@@ -68,38 +68,38 @@ OR
 ```
 .
 ├── pages                               - all pages in seperate files
-    ├── api                             - backend
-        └── anything.js                 - backend route same as filename
-    └── anything.jsx                    - frontend route same as filename
+|   ├── api                             - backend
+|   |   └── anything.js                 - backend route same as filename
+|   └── anything.jsx                    - frontend route same as filename
 ├── public                              - public assests
-    ├── svgs                            - svg files
-    ├── imgs                            - png/jpeg/others
-    └── anims                           - any animation (lottie) files
-├── backend                             - any different kind of backend (python/go)
-    ├── python                          - python backend folder
-    └── go                              - go backend folder
+|   ├── svgs                            - svg files
+|   ├── imgs                            - png, jpeg, etc.
+|   └── anims                           - any animation (lottie) files
+├── backend                             - any different kind of backend (python, go)
+|   ├── python                          - python backend folder
+|   └── go                              - go backend folder
 ├── styles
-    ├── components
-        ├── button.module.scss		    - styles related to button component
-        ├── input.module.scss		    - styles related to all types of input component
-        └── other.module.scss		    - styles related to any other component
-    ├── pages
-	    ├── home.module.scss		    - styles for main page
-        ├── dashboard.module.scss       - styles for dashboard page
-        └── contactus.module.scss       - scss styles for contact us page
-    └── global
-        └── index.module.scss           - global css variables and all
+|   ├── components
+|   |   ├── button.module.scss		- styles related to button component
+|   |   ├── input.module.scss		- styles related to all types of input component
+|   |   └── other.module.scss		- styles related to any other component
+|   ├── pages
+|   |   ├── home.module.scss		- styles for main page
+|   |   ├── dashboard.module.scss       - styles for dashboard page
+|   |   └── contactus.module.scss       - scss styles for contact us page
+|   └── global
+|       └── index.module.scss           - global css variables and all
 ├── constants
-    ├── index.js                        - create any global const vars
-    ├── limits.js                       - variable like MIN_LENGTH, MAX_LENGTH
-    └── others.js                       - any different kind of constants
+|   ├── index.js                        - create any global const vars
+|   ├── limits.js                       - variable like MIN_LENGTH, MAX_LENGTH
+|   └── others.js                       - any different kind of constants
 ├── contexts
-    └── index.js                        - context are exported from here
+|   └── index.js                        - context are exported from here
 ├── utils
-    ├── index.js                        - util functions are exported
-    ├── color.js                        - color category utils
-    ├── string.js                       - string manipulating utils
-    └── other.js                        - any other categories
+|   ├── index.js                        - util functions are exported
+|   ├── color.js                        - color category utils
+|   ├── string.js                       - string manipulating utils
+|   └── other.js                        - any other categories
 ├── .eslintrc                           - configs for eslint
 ├── .gitignore                          - files to ignore by git
 ├── .prettierignore                     - files to ignore by prettier
