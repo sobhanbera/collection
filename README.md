@@ -80,28 +80,15 @@ OR
     └── go                              - go backend folder
 ├── styles
     ├── components
-        ├── Button
-            ├── index.module.css        - usable styles for button
-            └── index.module.scss       - written style for button
-        ├── TextInput
-            ├── index.module.css        - usable styles for input
-            └── index.module.scss       - written style for input
-        └── OtherComponents...
-            ├── index.module.css        - any other css style
-            └── index.module.scss       - any other scss style
+        ├── button.module.scss			- styles related to button component
+        ├── input.module.scss			- styles related to all types of input component
+        └── other.module.scss			- styles related to any other component
     ├── pages
-        ├── Contactus
-            ├── index.module.css        - compiled styles
-            └── index.module.scss       - styles for contactus page
-        ├── Main
-            ├── index.module.css        - compiled styles
-            └── index.module.scss       - scss styles for main page
-        └── OtherPages...
-            ├── index.module.css        - other page's style
-            └── index.module.scss       - styles for all other pages
+		├── home.module.scss			- styles for main page
+		├── dashboard.module.scss       - styles for dashboard page
+		└── contactus.module.scss       - scss styles for contact us page
     └── global
-        ├── index.module.css            - compile scss (use this)
-        └── index.module.scss           - same as css (write this)
+        └── index.module.scss           - global css variables and all
 ├── constants
     ├── index.js                        - create any global const vars
     ├── limits.js                       - variable like MIN_LENGTH, MAX_LENGTH
