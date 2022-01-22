@@ -1,0 +1,15 @@
+.input {
+  padding: var(--input-padding);
+  border-radius: var(--btn-radius);
+  border: 1px solid black;
+}
+
+.input:hover {
+  border: 1px solid #AF40FF;
+}
+
+.input:focus {
+  outline: none;
+  border: 2px solid #af40ff;
+}
+/*# sourceMappingURL=index.module.css.map */
