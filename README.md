@@ -80,13 +80,13 @@ OR
     └── go                              - go backend folder
 ├── styles
     ├── components
-        ├── button.module.scss			- styles related to button component
-        ├── input.module.scss			- styles related to all types of input component
-        └── other.module.scss			- styles related to any other component
+        ├── button.module.scss		    - styles related to button component
+        ├── input.module.scss		    - styles related to all types of input component
+        └── other.module.scss		    - styles related to any other component
     ├── pages
-		├── home.module.scss			- styles for main page
-		├── dashboard.module.scss       - styles for dashboard page
-		└── contactus.module.scss       - scss styles for contact us page
+	    ├── home.module.scss		    - styles for main page
+        ├── dashboard.module.scss       - styles for dashboard page
+        └── contactus.module.scss       - scss styles for contact us page
     └── global
         └── index.module.scss           - global css variables and all
 ├── constants
