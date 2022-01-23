@@ -1,34 +1,123 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Collections
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This projects contains many different kinds of small and basic need task as a different project. This readme will be updated regularly when there is a need.
 
-```bash
-npm run dev
-# or
-yarn dev
+## Implementation
+
+[<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" height="60" />](https://github.com/sobhanbera/collection)
+[<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" height="60" />](https://github.com/sobhanbera/collection)
+[<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" height="60" />](https://github.com/sobhanbera/collection)
+[<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png" height="60" />](https://github.com/sobhanbera/collection)
+[<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" height="60" />](https://github.com/sobhanbera/collection)
+
+## Get Start 🌟
+
+### Contribute
+
+-   Fork this repo.
+-   Clone the repo you got after forking or type this commands:
+    ```bash
+    git clone https://github.com/<your_username_here>/collection.git
+    ```
+-   Start writing you code, when done with the code part, create a PR:
+    ```bash
+    git add .
+    git commit -m "<what_you_have_contributed>"
+    git push
+    ```
+-   Then make a PR to this repo and wait for the merge.
+-   REPEAT...
+
+### Prerequisites
+
+-   GIT, NPM/Yarn
+-   Install yarn by executing : `npm install -g yarn@latest`
+
+### Environment Setup
+
+1. Fork the repo and clone it on your system.
+
+2. Run the following command to install all the required packages to run the project:
+
+```
+    npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+OR
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+    yarn install
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+3. To run the project server:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+    yarn start
+```
 
-## Learn More
+OR
 
-To learn more about Next.js, take a look at the following resources:
+```
+    npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## File Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+.
+├── pages                               - all pages in seperate files
+|   ├── api                             - backend
+|   |   └── anything.js                 - backend route same as filename
+|   └── anything.jsx                    - frontend route same as filename
+├── public                              - public assests
+|   ├── svgs                            - svg files
+|   ├── imgs                            - png, jpeg, etc.
+|   └── anims                           - any animation (lottie) files
+├── backend                             - any different kind of backend (python, go)
+|   ├── python                          - python backend folder
+|   └── go                              - go backend folder
+├── styles
+|   ├── components
+|   |   ├── button.module.scss		- styles related to button component
+|   |   ├── input.module.scss		- styles related to all types of input component
+|   |   └── other.module.scss		- styles related to any other component
+|   ├── pages
+|   |   ├── home.module.scss		- styles for main page
+|   |   ├── dashboard.module.scss       - styles for dashboard page
+|   |   └── contactus.module.scss       - scss styles for contact us page
+|   └── global
+|       └── index.module.scss           - global css variables and all
+├── constants
+|   ├── index.js                        - create any global const vars
+|   ├── limits.js                       - variable like MIN_LENGTH, MAX_LENGTH
+|   └── others.js                       - any different kind of constants
+├── contexts
+|   └── index.js                        - context are exported from here
+├── utils
+|   ├── index.js                        - util functions are exported
+|   ├── color.js                        - color category utils
+|   ├── string.js                       - string manipulating utils
+|   └── other.js                        - any other categories
+├── .eslintrc                           - configs for eslint
+├── .gitignore                          - files to ignore by git
+├── .prettierignore                     - files to ignore by prettier
+├── .prettierrc.js                      - prettier config
+├── app.json                            - project meta data
+├── CONTRIBUTING.md                     - contribution guidelines
+├── next.config.js                      - project config
+├── package.json                        - project's package details
+├── README.md                           - the main project details
+└── struct.md                           - get to know where is which file
+```
 
-## Deploy on Vercel
+More info about file structure is [here](https://github.com/sobhanbera/collection/blob/main/struct.md).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contribution Guidelines
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contribution Guidelines is [here](https://github.com/sobhanbera/collection/blob/main/CONTRIBUTING.md) and will be added soon
+
+## Contributors
+
+Contributors list will go here.
