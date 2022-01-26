@@ -69,8 +69,8 @@ OR
 .
 ├── pages                               - all pages in seperate files
 |   ├── api                             - backend
-|   |   └── anything.js                 - backend route same as filename
-|   └── anything.jsx                    - frontend route same as filename
+|   |   └── anything.ts                 - backend route same as filename
+|   └── anything.tsx                    - frontend route same as filename
 ├── public                              - public assests
 |   ├── svgs                            - svg files
 |   ├── imgs                            - png, jpeg, etc.
@@ -90,16 +90,16 @@ OR
 |   └── global
 |       └── index.module.scss           - global css variables and all
 ├── constants
-|   ├── index.js                        - create any global const vars
-|   ├── limits.js                       - variable like MIN_LENGTH, MAX_LENGTH
-|   └── others.js                       - any different kind of constants
+|   ├── index.ts                        - create any global const vars
+|   ├── limits.ts                       - variable like MIN_LENGTH, MAX_LENGTH
+|   └── others.ts                       - any different kind of constants
 ├── contexts
-|   └── index.js                        - context are exported from here
+|   └── index.ts                        - context are exported from here
 ├── utils
-|   ├── index.js                        - util functions are exported
-|   ├── color.js                        - color category utils
-|   ├── string.js                       - string manipulating utils
-|   └── other.js                        - any other categories
+|   ├── index.ts                        - util functions are exported
+|   ├── color.ts                        - color category utils
+|   ├── string.ts                       - string manipulating utils
+|   └── other.ts                        - any other categories
 ├── .eslintrc                           - configs for eslint
 ├── .gitignore                          - files to ignore by git
 ├── .prettierignore                     - files to ignore by prettier
