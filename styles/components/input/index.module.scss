@@ -1,14 +1,15 @@
 .input {
-    padding: var(--input-padding);
-    border-radius: var(--btn-radius);
-    border: 1px solid black;
-}
-
-.input:hover {
-    border: 1px solid #AF40FF;
+    outline: none;
+    border: none;
+    background-color: var(--input-color);
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: var(--input-border);
+    color: var(--input-text-color);
 }
 
 .input:focus {
     outline: none;
-    border: 2px solid #af40ff;
+    border: var(--input-invert-border);
 }

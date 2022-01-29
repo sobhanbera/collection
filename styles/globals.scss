@@ -1,25 +1,68 @@
-html,
-body {
-    padding: 0;
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+* {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    min-height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.dark {
+    /* for button */
+    --border-color: rgb(78, 78, 78);
+    --btn-color: rgb(0, 0, 0); //button color  in dark mod
+    --btn-invert-color: rgb(0, 0, 0); //button color when hover in dark mod
+    --text-color: rgb(255, 255, 255); //text color in dark mode
+    --text-invert-color: rgb(255, 255, 255); //text color when hover in dark mod
+    --border: 1px solid var(--border-color); //border when dark mode
+    --border-invert: 1px solid rgb(255, 255, 255); //border when hover in dark mod
+    background-color: black; //background color in dark mod
+    /* for input */
+    --input-color: black; //input background color in dark mod
+    --input-border: 1px solid var(--border-color); //input border in dark mod
+    --input-invert-border: 1px solid white; //input border in dark mod when hover
+    --input-text-color: white; //text color of input in dark mode
+    /* for slider */
+    --slider-border: 1px solid var(--border-color); //border when dark mode
+    --slider-invert-border: 1px solid rgb(255, 255, 255); //border when hover in dark mod
+    --slider-color: black;
+    --slider--thumb-color: white;
+    --slider-text-color: white;
+    /* normal css for container */
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-:root {
-    --btn-color: rgb(35, 137, 255);
-    --btn-radius: 3px;
-    --input-padding: 15px 10px;
+.light {
+    /* for button */
+    --border-color: rgb(78, 78, 78);
+    --btn-color: rgb(255, 255, 255); //button color when light mod
+    --btn-invert-color: rgb(255, 255, 255); //button color when hover
+    --text-color: #666; //text color when light mod
+    --text-invert-color: #666; //text color when hover in olight mode
+    --border: 1px solid var(--text-color); //border when light mod
+    --border-invert: 1px solid black; //border when hover in light mod
+    background-color: white; //background color in light mod
+    /* for input */
+    --input-color: rgb(255, 255, 255); //input bg color in light mod
+    --input-border: 1px solid var(--border-color); //input border color in light mod
+    --input-invert-border: 1px solid rgb(0, 0, 0); //input border color when hover in light mod
+    --input-text-color: rgb(0, 0, 0); //input text color in light mod
+    /* for slider */
+    --slider-border: 1px solid var(--border-color); //input border color in light mod
+    --slider-invert-border: 1px solid rgb(0, 0, 0); //input border color when hover in light mod
+    --slider-color: rgb(255, 255, 255);
+    --slider--thumb-color: rgb(0, 0, 0);
+    --slider-text-color: rgb(0, 0, 0);
+    /* normal css for container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
 }
