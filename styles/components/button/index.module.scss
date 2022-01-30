@@ -1,43 +1,16 @@
 .btn {
-    background-color: var(--btn-color);
-    border: none;
-    padding: 10px 30px;
-    color: white;
-    border-radius: var(--btn-radius);
-    cursor: pointer;
+    background-color: var(--theme-invert-color);
+    color: var(--theme-color);
+    border: 1px solid transparent;
 
-    align-items: center;
-    background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
-    border: 0;
-    border-radius: var(--btn-radius);
-    box-sizing: border-box;
-    color: #ffffff;
-    display: flex;
-    font-family: Phantomsans, sans-serif;
-    font-size: 20px;
-    justify-content: center;
-    line-height: 1em;
-    max-width: 100%;
-    min-width: 140px;
-    padding: 3px;
-    text-decoration: none;
-    user-select: none;
-    white-space: nowrap;
+    margin: 10px;
     cursor: pointer;
+    padding: 8px 18px;
+    border-radius: 4px;
 
-    &:active,
     &:hover {
-        outline: 0;
-
-        span {
-            background: none;
-        }
-    }
-}
-
-@media (min-width: 768px) {
-    .btn {
-        font-size: 24px;
-        min-width: 196px;
+        background-color: transparent;
+        color: var(--theme-invert-color);
+        border: 1px solid var(--theme-invert-color);
     }
 }
