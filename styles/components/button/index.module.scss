@@ -1,43 +1,17 @@
 .btn {
     background-color: var(--btn-color);
-    border: none;
-    padding: 10px 30px;
-    color: white;
-    border-radius: var(--btn-radius);
-    cursor: pointer;
-
-    align-items: center;
-    background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
-    border: 0;
-    border-radius: var(--btn-radius);
-    box-sizing: border-box;
-    color: #ffffff;
-    display: flex;
-    font-family: Phantomsans, sans-serif;
-    font-size: 20px;
-    justify-content: center;
-    line-height: 1em;
-    max-width: 100%;
-    min-width: 140px;
-    padding: 3px;
-    text-decoration: none;
-    user-select: none;
-    white-space: nowrap;
-    cursor: pointer;
-
-    &:active,
-    &:hover {
-        outline: 0;
-
-        span {
-            background: none;
-        }
-    }
+    color: var(--text-color);
+    border-radius: 4px;
+    font-weight: 500;
+    padding: 8px 16px;
+    transition: 0.385s ease;
+    border: var(--border);
+    margin: 10px;
 }
 
-@media (min-width: 768px) {
-    .btn {
-        font-size: 24px;
-        min-width: 196px;
-    }
+.btn:hover {
+    background-color: var(--btn-invert-color);
+    color: var(--text-invert-color);
+    border: var(--border-invert);
+    cursor: pointer;
 }
