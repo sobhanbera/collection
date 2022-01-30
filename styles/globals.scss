@@ -30,6 +30,11 @@
     --slider-color: black;
     --slider--thumb-color: white;
     --slider-text-color: white;
+    /* for radio */
+    --radio-border: 2px solid #bbb;
+    --radio-bg-color: #3f3f3f;
+    --radio-circle-color: white;
+    --radio-label-color: white;
     /* normal css for container */
     display: flex;
     justify-content: center;
@@ -59,6 +64,11 @@
     --slider-color: rgb(255, 255, 255);
     --slider--thumb-color: rgb(0, 0, 0);
     --slider-text-color: rgb(0, 0, 0);
+    /* for radio */
+    --radio-border: 2px solid #bbb;
+    --radio-bg-color: #c9c9c9;
+    --radio-circle-color: rgb(0, 0, 0);
+    --radio-label-color: rgb(0, 0, 0);
     /* normal css for container */
     display: flex;
     justify-content: center;

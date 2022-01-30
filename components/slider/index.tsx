@@ -10,7 +10,7 @@ function Slider(props: SliderProps) {
     const inputSlider = useRef<HTMLInputElement>()
     const [tag, setTag] = useState(false)
 
-    const changed = evt => {
+    const changed = (evt: any) => {
         slideValue.current.textContent = evt.target.value
         setTag(true)
     }
@@ -20,7 +20,7 @@ function Slider(props: SliderProps) {
     }
 
     return (
-        <div className={style.range}>
+        <div onBlur={reset} className={style.range}>
             <div className={style.sliderValue}>
                 <div className={tag ? style.show : null} ref={slideValue}>
                     100
