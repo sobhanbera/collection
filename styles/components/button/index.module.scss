@@ -1,17 +1,16 @@
-.btn {
-    background-color: var(--btn-color);
-    color: var(--text-color);
-    border-radius: 4px;
-    font-weight: 500;
-    padding: 8px 16px;
-    transition: 0.385s ease;
-    border: var(--border);
-    margin: 10px;
-}
+.button {
+    background-color: var(--theme-invert-color);
+    color: var(--theme-color);
+    border: 1px solid transparent;
 
-.btn:hover {
-    background-color: var(--btn-invert-color);
-    color: var(--text-invert-color);
-    border: var(--border-invert);
+    margin: 10px;
     cursor: pointer;
+    padding: 8px 18px;
+    border-radius: 4px;
+
+    &:hover {
+        background-color: transparent;
+        color: var(--theme-invert-color);
+        border: 1px solid var(--theme-invert-color);
+    }
 }

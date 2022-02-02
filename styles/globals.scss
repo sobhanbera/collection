@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    list-style-type: none;
     text-decoration: none;
     list-style: none;
 }
@@ -88,4 +91,9 @@
     --kbd-bg-color: white; //kbd ka background ka color
     --kbd-text-color: rgb(34, 34, 34); //kbd k andar vale texts ka color
     --kbg-heading-color: rgb(212, 212, 212);
+    /* normal css for container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
