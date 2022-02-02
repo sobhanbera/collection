@@ -3,10 +3,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     text-decoration: none;
     list-style: none;
+}
+
+.website-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
 }
 
 .dark {
@@ -39,12 +48,10 @@
     --check-border: 2px solid #bbb; //check mark border color
     --check-bg-color: #3f3f3f; //check mark ka background color
     --check-label-color: white; //check mark ke title ka color
-    /* normal css for container */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
+    /* kbd comp */
+    --kbd-bg-color: rgb(20, 20, 20); //kbd ka background ka color
+    --kbd-text-color: rgb(235, 235, 235); //kbd k andar vale texts ka color
+    --kbg-heading-color: rgb(49, 49, 49);
 }
 
 .light {
@@ -77,10 +84,8 @@
     --check-border: 2px solid transparent; //check mark border color
     --check-bg-color: #c9c9c9; //check mark ka background color
     --check-label-color: var(--text-color); //check mark ke title ka color
-    /* normal css for container */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
+    /* kbd comp */
+    --kbd-bg-color: white; //kbd ka background ka color
+    --kbd-text-color: rgb(34, 34, 34); //kbd k andar vale texts ka color
+    --kbg-heading-color: rgb(212, 212, 212);
 }

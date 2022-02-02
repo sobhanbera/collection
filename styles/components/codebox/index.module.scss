@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap');
+.container {
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 90%;
+    max-width: 1040px;
+    img {
+        width: 30px;
+        height: 30px;
+    }
+    .bar {
+        height: 50px;
+        background-color: #131849;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bar div {
+        background-color: #1f2667;
+        height: 100%;
+        width: fit-content;
+        padding: 10px 20px;
+    }
+    .editor {
+        width: 100%;
+        overflow-x: auto;
+        padding: 20px;
+        line-height: 30px;
+        background-color: #1f2667;
+        font-family: 'fira code';
+        span.blue {
+            font-family: 'fira code';
+            color: rgb(0, 225, 255);
+            margin-right: 5px;
+        }
+    }
+    .editor::-webkit-scrollbar {
+        background-color: rgb(131, 131, 131);
+        height: 8px;
+    }
+    .editor::-webkit-scrollbar-thumb {
+        background-color: rgb(61, 61, 61);
+        border-radius: 10px;
+    }
+    .copy::before {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        transition: 0.3s ease;
+        background-color: rgba(33, 36, 233, 0.493);
+    }
+    .copy:hover::before {
+        height: 100%;
+    }
+    .copy:active::before {
+        transform: scale(0.6);
+    }
+    .copy {
+        position: relative;
+        cursor: pointer;
+        text-align: center;
+        padding: 15px;
+        background-color: #45496d;
+    }
+}

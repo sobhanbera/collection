@@ -1,12 +1,10 @@
 .container {
     position: relative;
     cursor: pointer;
-    font-size: 22px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    font-size: 18px;
     font-weight: 500;
     padding-left: 35px;
     margin: 10px;
@@ -64,7 +62,7 @@
 /* Style the checkmark/indicator */
 
 .container .checkmark:after {
-    left: 8px;
+    left: 7px;
     top: 3px;
     width: 5px;
     height: 10px;

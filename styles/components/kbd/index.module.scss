@@ -1,0 +1,22 @@
+.container {
+    color: var(--kbd-text-color);
+    width: 90%;
+    max-width: 1040px;
+    background-color: var(--kbd-bg-color);
+    padding: 15px 10px;
+    border-radius: 5px;
+    margin: 10px;
+    .heading {
+        background-color: var(--kbg-heading-color);
+        border-radius: 10px;
+        padding: 10px;
+        color: var(--kbd-text-color);
+    }
+    .kbd {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 25px;
+        text-align: center;
+    }
+}

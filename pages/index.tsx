@@ -3,12 +3,16 @@ import Input from '../components/input'
 import Slider from '../components/slider'
 import Radio from '../components/radio'
 import CheckBox from '../components/checkbox'
+import Codebox from '../components/codebox'
+import Kbd from '../components/kbd'
 type Props = {}
 export default function Home({}: Props) {
     return (
-        <div className="dark">
+        <div className="dark website-container">
+            <Kbd />
+            <Codebox>apple</Codebox>
             <CheckBox id="chk1">Apple</CheckBox>
-            <CheckBox id="chk1">kappa</CheckBox>
+            <CheckBox id="chk2">kappa</CheckBox>
             <Radio id="r1" name="same">
                 First
             </Radio>
