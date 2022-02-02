@@ -27,14 +27,18 @@
     /* for slider */
     --slider-border: 1px solid var(--border-color); //border when dark mode
     --slider-invert-border: 1px solid rgb(255, 255, 255); //border when hover in dark mod
-    --slider-color: black;
-    --slider--thumb-color: white;
-    --slider-text-color: white;
+    --slider-color: black; //slider line color
+    --slider--thumb-color: white; //thumb color
+    --slider-text-color: white; //text written for number color
     /* for radio */
-    --radio-border: 2px solid #bbb;
-    --radio-bg-color: #3f3f3f;
-    --radio-circle-color: white;
-    --radio-label-color: white;
+    --radio-border: 2px solid #bbb; //radio border color
+    --radio-bg-color: #3f3f3f; //radio background color
+    --radio-circle-color: white; //circle insdie radio color
+    --radio-label-color: white; //radio ka jo label hai uska color
+    /* check mark */
+    --check-border: 2px solid #bbb; //check mark border color
+    --check-bg-color: #3f3f3f; //check mark ka background color
+    --check-label-color: white; //check mark ke title ka color
     /* normal css for container */
     display: flex;
     justify-content: center;
@@ -61,14 +65,18 @@
     /* for slider */
     --slider-border: 1px solid var(--border-color); //input border color in light mod
     --slider-invert-border: 1px solid rgb(0, 0, 0); //input border color when hover in light mod
-    --slider-color: rgb(255, 255, 255);
-    --slider--thumb-color: rgb(0, 0, 0);
-    --slider-text-color: rgb(0, 0, 0);
+    --slider-color: rgb(255, 255, 255); //slider line color
+    --slider--thumb-color: rgb(0, 0, 0); //thumb color
+    --slider-text-color: rgb(0, 0, 0); //text written for number color
     /* for radio */
-    --radio-border: 2px solid #bbb;
-    --radio-bg-color: #c9c9c9;
-    --radio-circle-color: rgb(0, 0, 0);
-    --radio-label-color: rgb(0, 0, 0);
+    --radio-border: 2px solid #bbb; //radio border color
+    --radio-bg-color: #c9c9c9; //radio background color
+    --radio-circle-color: rgb(0, 0, 0); //circle insdie radio color
+    --radio-label-color: var(--text-color); //radio ka jo label hai uska color
+    /* check mark */
+    --check-border: 2px solid transparent; //check mark border color
+    --check-bg-color: #c9c9c9; //check mark ka background color
+    --check-label-color: var(--text-color); //check mark ke title ka color
     /* normal css for container */
     display: flex;
     justify-content: center;
