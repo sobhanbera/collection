@@ -1,38 +1,99 @@
-.dark {
-    --background: #000000;
-    --text-color: #ffffff;
-
-    --theme-color: #000000;
-    --theme-invert-color: #ffffff;
-}
-.light {
-    --background: #ffffff;
-    --text-color: #000000;
-
-    --theme-color: #ffffff;
-    --theme-invert-color: #000000;
-}
-
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 * {
     box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
-
     outline: 0;
-
     list-style-type: none;
-    list-style: none;
-
     text-decoration: none;
-
-    transition: 0.385s all;
-
-    font-size: 18px;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    list-style: none;
 }
 
-html,
-body {
+.website-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
+    padding: 20px;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dark {
+    /* for button */
+    --border-color: rgb(78, 78, 78);
+    --btn-color: rgb(0, 0, 0); //button color  in dark mod
+    --btn-invert-color: rgb(0, 0, 0); //button color when hover in dark mod
+    --text-color: rgb(255, 255, 255); //text color in dark mode
+    --text-invert-color: rgb(255, 255, 255); //text color when hover in dark mod
+    --border: 1px solid var(--border-color); //border when dark mode
+    --border-invert: 1px solid rgb(255, 255, 255); //border when hover in dark mod
+    background-color: black; //background color in dark mod
+    /* for input */
+    --input-color: black; //input background color in dark mod
+    --input-border: 1px solid var(--border-color); //input border in dark mod
+    --input-invert-border: 1px solid white; //input border in dark mod when hover
+    --input-text-color: white; //text color of input in dark mode
+    /* for slider */
+    --slider-border: 1px solid var(--border-color); //border when dark mode
+    --slider-invert-border: 1px solid rgb(255, 255, 255); //border when hover in dark mod
+    --slider-color: black; //slider line color
+    --slider--thumb-color: white; //thumb color
+    --slider-text-color: white; //text written for number color
+    /* for radio */
+    --radio-border: 2px solid #bbb; //radio border color
+    --radio-bg-color: #3f3f3f; //radio background color
+    --radio-circle-color: white; //circle insdie radio color
+    --radio-label-color: white; //radio ka jo label hai uska color
+    /* check mark */
+    --check-border: 2px solid #bbb; //check mark border color
+    --check-bg-color: #3f3f3f; //check mark ka background color
+    --check-label-color: white; //check mark ke title ka color
+    /* kbd comp */
+    --kbd-bg-color: rgb(20, 20, 20); //kbd ka background ka color
+    --kbd-text-color: rgb(235, 235, 235); //kbd k andar vale texts ka color
+    --kbg-heading-color: rgb(49, 49, 49);
+}
+
+.light {
+    /* for button */
+    --border-color: rgb(78, 78, 78);
+    --btn-color: rgb(255, 255, 255); //button color when light mod
+    --btn-invert-color: rgb(255, 255, 255); //button color when hover
+    --text-color: #666; //text color when light mod
+    --text-invert-color: #666; //text color when hover in olight mode
+    --border: 1px solid var(--text-color); //border when light mod
+    --border-invert: 1px solid black; //border when hover in light mod
+    background-color: white; //background color in light mod
+    /* for input */
+    --input-color: rgb(255, 255, 255); //input bg color in light mod
+    --input-border: 1px solid var(--border-color); //input border color in light mod
+    --input-invert-border: 1px solid rgb(0, 0, 0); //input border color when hover in light mod
+    --input-text-color: rgb(0, 0, 0); //input text color in light mod
+    /* for slider */
+    --slider-border: 1px solid var(--border-color); //input border color in light mod
+    --slider-invert-border: 1px solid rgb(0, 0, 0); //input border color when hover in light mod
+    --slider-color: rgb(255, 255, 255); //slider line color
+    --slider--thumb-color: rgb(0, 0, 0); //thumb color
+    --slider-text-color: rgb(0, 0, 0); //text written for number color
+    /* for radio */
+    --radio-border: 2px solid #bbb; //radio border color
+    --radio-bg-color: #c9c9c9; //radio background color
+    --radio-circle-color: rgb(0, 0, 0); //circle insdie radio color
+    --radio-label-color: var(--text-color); //radio ka jo label hai uska color
+    /* check mark */
+    --check-border: 2px solid transparent; //check mark border color
+    --check-bg-color: #c9c9c9; //check mark ka background color
+    --check-label-color: var(--text-color); //check mark ke title ka color
+    /* kbd comp */
+    --kbd-bg-color: white; //kbd ka background ka color
+    --kbd-text-color: rgb(34, 34, 34); //kbd k andar vale texts ka color
+    --kbg-heading-color: rgb(212, 212, 212);
+    /* normal css for container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

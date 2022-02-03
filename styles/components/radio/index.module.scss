@@ -1,0 +1,35 @@
+.container input[type='radio'] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 6px;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: var(--radio-border);
+    background-color: var(--radio-bg-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container input[type='radio']:checked {
+    background-color: var(--radio-circle-color);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.container label {
+    color: var(--radio-label-color);
+    margin-left: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
