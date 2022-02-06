@@ -1,99 +1,76 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+// some custom font faces
+// that could be used through out the website
+@font-face {
+    font-family: Common;
+    src: url('../assets/fonts/common-regular.woff');
+}
+@font-face {
+    font-family: Common-Medium;
+    src: url('../assets/fonts/common-medium.woff');
+}
+@font-face {
+    font-family: Common-Bold;
+    src: url('../assets/fonts/common-bold.woff');
+}
+@font-face {
+    font-family: Common2;
+    src: url('../assets/fonts/common2.woff');
+}
+
+// color scheme for dark mode
+.dark {
+    --theme-color: #000000;
+    --theme-color-rgb: 0, 0, 0;
+    --theme-invert-color: #ffffff;
+    --theme-invert-color-rgb: 255, 255, 255;
+
+    --background: #000000;
+    --background-rgb: 0, 0, 0;
+    --text-color: #ffffff;
+    --text-color-rgb: 255, 255, 255;
+}
+
+// color scheme for light mode
+.light {
+    --theme-color: #ffffff;
+    --theme-color-rgb: 255, 255, 255;
+    --theme-invert-color: #000000;
+    --theme-invert-color-rgb: 0, 0, 0;
+
+    --background: #ffffff;
+    --background-rgb: 255, 255, 255;
+    --text-color: #000000;
+    --text-color-rgb: 0, 0, 0;
+}
+
+// some default properties for all elements in the dom
 * {
     box-sizing: border-box;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
+
+    font-size: 18px;
+    font-family: Common, sans-serif;
+
     outline: 0;
+
     list-style-type: none;
     text-decoration: none;
     list-style: none;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease-in-out;
 }
 
-.website-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-    flex-direction: column;
-    font-family: 'Poppins', sans-serif;
-}
+// toggling the body theme depending on its theme from
+// theme Provider context api
+body {
+    &.dark {
+        background-color: #000000;
+    }
 
-.dark {
-    /* for button */
-    --border-color: rgb(78, 78, 78);
-    --btn-color: rgb(0, 0, 0); //button color  in dark mod
-    --btn-invert-color: rgb(0, 0, 0); //button color when hover in dark mod
-    --text-color: rgb(255, 255, 255); //text color in dark mode
-    --text-invert-color: rgb(255, 255, 255); //text color when hover in dark mod
-    --border: 1px solid var(--border-color); //border when dark mode
-    --border-invert: 1px solid rgb(255, 255, 255); //border when hover in dark mod
-    background-color: black; //background color in dark mod
-    /* for input */
-    --input-color: black; //input background color in dark mod
-    --input-border: 1px solid var(--border-color); //input border in dark mod
-    --input-invert-border: 1px solid white; //input border in dark mod when hover
-    --input-text-color: white; //text color of input in dark mode
-    /* for slider */
-    --slider-border: 1px solid var(--border-color); //border when dark mode
-    --slider-invert-border: 1px solid rgb(255, 255, 255); //border when hover in dark mod
-    --slider-color: black; //slider line color
-    --slider--thumb-color: white; //thumb color
-    --slider-text-color: white; //text written for number color
-    /* for radio */
-    --radio-border: 2px solid #bbb; //radio border color
-    --radio-bg-color: #3f3f3f; //radio background color
-    --radio-circle-color: white; //circle insdie radio color
-    --radio-label-color: white; //radio ka jo label hai uska color
-    /* check mark */
-    --check-border: 2px solid #bbb; //check mark border color
-    --check-bg-color: #3f3f3f; //check mark ka background color
-    --check-label-color: white; //check mark ke title ka color
-    /* kbd comp */
-    --kbd-bg-color: rgb(20, 20, 20); //kbd ka background ka color
-    --kbd-text-color: rgb(235, 235, 235); //kbd k andar vale texts ka color
-    --kbg-heading-color: rgb(49, 49, 49);
-}
-
-.light {
-    /* for button */
-    --border-color: rgb(78, 78, 78);
-    --btn-color: rgb(255, 255, 255); //button color when light mod
-    --btn-invert-color: rgb(255, 255, 255); //button color when hover
-    --text-color: #666; //text color when light mod
-    --text-invert-color: #666; //text color when hover in olight mode
-    --border: 1px solid var(--text-color); //border when light mod
-    --border-invert: 1px solid black; //border when hover in light mod
-    background-color: white; //background color in light mod
-    /* for input */
-    --input-color: rgb(255, 255, 255); //input bg color in light mod
-    --input-border: 1px solid var(--border-color); //input border color in light mod
-    --input-invert-border: 1px solid rgb(0, 0, 0); //input border color when hover in light mod
-    --input-text-color: rgb(0, 0, 0); //input text color in light mod
-    /* for slider */
-    --slider-border: 1px solid var(--border-color); //input border color in light mod
-    --slider-invert-border: 1px solid rgb(0, 0, 0); //input border color when hover in light mod
-    --slider-color: rgb(255, 255, 255); //slider line color
-    --slider--thumb-color: rgb(0, 0, 0); //thumb color
-    --slider-text-color: rgb(0, 0, 0); //text written for number color
-    /* for radio */
-    --radio-border: 2px solid #bbb; //radio border color
-    --radio-bg-color: #c9c9c9; //radio background color
-    --radio-circle-color: rgb(0, 0, 0); //circle insdie radio color
-    --radio-label-color: var(--text-color); //radio ka jo label hai uska color
-    /* check mark */
-    --check-border: 2px solid transparent; //check mark border color
-    --check-bg-color: #c9c9c9; //check mark ka background color
-    --check-label-color: var(--text-color); //check mark ke title ka color
-    /* kbd comp */
-    --kbd-bg-color: white; //kbd ka background ka color
-    --kbd-text-color: rgb(34, 34, 34); //kbd k andar vale texts ka color
-    --kbg-heading-color: rgb(212, 212, 212);
-    /* normal css for container */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    &.light {
+        background-color: #ffffff;
+    }
 }
