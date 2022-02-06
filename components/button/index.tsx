@@ -1,11 +1,12 @@
 import styles from '../../styles/components/button/index.module.scss'
 
-export default function Button(
-    props: React.HtmlHTMLAttributes<HTMLButtonElement>,
-) {
+interface ButtonProps extends React.HtmlHTMLAttributes<HTMLButtonElement> {
+    content: string
+}
+export default function Button(props: ButtonProps) {
     return (
-        <button className={styles.btn} {...props}>
-            {props.children}
+        <button className={styles.button} {...props}>
+            {props.children || props.content}
         </button>
     )
 }
