@@ -49,14 +49,32 @@ export default function ThemeProvider(props: ThemeProviderProps) {
      */
     const [theme, setTheme] = useState<boolean>(defaultTheme)
 
+    useEffect(() => {
+        getThemeDataFromLocalStorage()
+    }, [])
+
+    /**
+     * updating the theme value in the local storage
+     * whenever the theme value is changed
+     */
+    useEffect(() => {
+        localStorage.theme = String(theme)
+        console.log('Theme', localStorage.theme, localStorage.themes)
+
+        document.body.classList.value = theme
+            ? defaultThemeCode
+            : defaultInvertThemeCode
+    }, [theme])
+
     /**
      * by default this function will toggle the current theme if the current theme is dark then it will make it light
      * else to dark, this function will also help to save that data to local storage again and again
      * @param {ThemeType} theme is optional and if provided then the function will not toggle theme instead it will set the theme to the passed argument
      */
-    const toggleTheme = (theme?: ThemeType): null => {
-        setTheme(value => !value)
-        return null
+    const toggleTheme = (theme?: ThemeType): any => {
+        // since the theme code length is one only
+        if (theme?.length === 1) setTheme(theme === 'd')
+        else setTheme(value => !value)
     }
 
     /**
@@ -64,28 +82,13 @@ export default function ThemeProvider(props: ThemeProviderProps) {
      * this task should be done only once and when the website is loaded
      */
     const getThemeDataFromLocalStorage = () => {
-        const theme = localStorage.getItem('theme')
-        if (theme === String(defaultTheme)) {
+        const localTheme = localStorage.theme
+        if (localTheme === String(defaultTheme)) {
             setTheme(defaultTheme)
         } else {
             setTheme(!defaultTheme)
         }
     }
-
-    /**
-     * updating the theme value in the local storage
-     * whenever the theme value is changed
-     */
-    useEffect(() => {
-        localStorage.setItem('theme', theme.toString())
-        document.body.classList.value = theme
-            ? defaultThemeCode
-            : defaultInvertThemeCode
-    }, [theme])
-
-    useEffect(() => {
-        getThemeDataFromLocalStorage()
-    }, [])
 
     // value of the context api - ThemeProvider
     const value = {
